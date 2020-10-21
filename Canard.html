@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanardHunt</title>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            background-color: bisque;
+            text-align: center;
+            border: solid 1px red;
+            padding: 2% 0%;
+            width: 80%;
+            margin: auto;
+        }
+        #container {
+          width: 1500px;
+          height: 800px;
+          margin: 50px auto;
+          position: relative;
+          border: 1px solid red;
+          background: url(Images/Nature_et_zen.com_4_1024x1024.jpg);
+          background-size: cover;
+          cursor: url(Images/spear11.png),auto;
+        }
+    
+        #square {
+          width: 100px;
+          height: 100px;
+          background-image: url(Images/duck.gif);
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+        }
+
+        #square:active {
+            background-image: url(Images/deadduck.PNG);
+            width: 100px;
+          height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Duck Killer</h1>
+
+    <div id="container">
+        <div id="square"></div>
+      </div>
+    
+
+
+
+<script src="js/DuckKiller.js"></script>
+</body>
+</html>
